@@ -2,7 +2,7 @@ const mockDb = [
   {
     id: 1,
     user: "Mark Webber",
-    avatar: "/assets/images/avatar-mark-webber.webp",
+    avatar: "./assets/images/avatar-mark-webber.webp",
     event: "react_to_post",
     timePast: "1m",
     snippet: "My first tournament today!",
@@ -11,7 +11,7 @@ const mockDb = [
   {
     id: 2,
     user: "Angela Gray",
-    avatar: "/assets/images/avatar-angela-gray.webp",
+    avatar: "./assets/images/avatar-angela-gray.webp",
     timePast: "5m",
     event: "follow",
     snippet: "",
@@ -20,7 +20,7 @@ const mockDb = [
   {
     id: 3,
     user: "Jacob Thompson",
-    avatar: "/assets/images/avatar-jacob-thompson.webp",
+    avatar: "./assets/images/avatar-jacob-thompson.webp",
     timePast: "1day",
     event: "join_group",
     snippet: "Chess Club",
@@ -29,7 +29,7 @@ const mockDb = [
   {
     id: 4,
     user: "Rizky Hasanuddin",
-    avatar: "/assets/images/avatar-rizky-hasanuddin.webp",
+    avatar: "./assets/images/avatar-rizky-hasanuddin.webp",
     timePast: "5days",
     event: "private_message",
     snippet:
@@ -39,16 +39,16 @@ const mockDb = [
   {
     id: 5,
     user: "Kimberly Smith",
-    avatar: "/assets/images/avatar-kimberly-smith.webp",
+    avatar: "./assets/images/avatar-kimberly-smith.webp",
     timePast: "1week",
     event: "picture",
-    snippet: "/assets/images/image-chess.webp",
+    snippet: "./assets/images/image-chess.webp",
     read: true,
   },
   {
     id: 6,
     user: "Nathan Peterson",
-    avatar: "/assets/images/avatar-nathan-peterson.webp",
+    avatar: "./assets/images/avatar-nathan-peterson.webp",
     timePast: "2weeks",
     event: "react_to_post",
     snippet: "5 end-game strategies to increase your win rate",
@@ -57,7 +57,7 @@ const mockDb = [
   {
     id: 7,
     user: "Anna Kim",
-    avatar: "/assets/images/avatar-anna-kim.webp",
+    avatar: "./assets/images/avatar-anna-kim.webp",
     timePast: "2weeks",
     event: "leave_group",
     snippet: "Chess Club",
