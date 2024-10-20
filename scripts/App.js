@@ -42,7 +42,7 @@ const mockDb = [
     avatar: "./assets/images/avatar-kimberly-smith.webp",
     timePast: "1week",
     event: "picture",
-    snippet: "./assets/images/image-chess.wep",
+    snippet: "./assets/images/image-chess.webp",
     read: true,
   },
   {
