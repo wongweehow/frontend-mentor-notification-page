@@ -2,7 +2,7 @@ const mockDb = [
   {
     id: 1,
     user: "Mark Webber",
-    avatar: "assets/images/avatar-mark-webber.webp",
+    avatar: "./assets/images/avatar-mark-webber.webp",
     event: "react_to_post",
     timePast: "1m",
     snippet: "My first tournament today!",
@@ -20,7 +20,7 @@ const mockDb = [
   {
     id: 3,
     user: "Jacob Thompson",
-    avatar: "/assets/images/avatar-jacob-thompson.webp",
+    avatar: "./assets/images/avatar-jacob-thompson.webp",
     timePast: "1day",
     event: "join_group",
     snippet: "Chess Club",
@@ -71,7 +71,7 @@ function NotificationCard(props) {
       className={`notification-card ${!props.read ? "bg-unread" : ""}`}
       onClick={() => props.updateRead(props.id)}
     >
-      <img className="avatar" src="/assets/images/avatar-mark-webber.webp" />
+      <img className="avatar" src={props.avatar} />
       <div className="notification-content">
         {props.event === "follow" ? (
           <>
