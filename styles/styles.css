@@ -1,0 +1,160 @@
+.container {
+  background-color: var(--snow);
+  padding: 100px 0;
+}
+
+.notification-panel {
+  max-width: 730px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 20px 0;
+  border-radius: 15px;
+  background-color: var(--white);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#header h1 {
+  font: var(--f-header);
+  color: var(--very-dark-gray-blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#count {
+  font: var(--f-body-bold);
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 2px 10px;
+  border-radius: 6px;
+}
+
+#mark-read {
+  border: none;
+  font: inherit;
+  color: var(--dark-gray-blue);
+  background-color: inherit;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#mark-read:hover {
+  color: var(--blue);
+}
+
+.notification-card {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.avatar {
+  width: 45px;
+}
+
+.user-name {
+  font: var(--f-body-bold);
+  color: var(--very-dark-gray-blue);
+  cursor: pointer;
+}
+
+.user-name:hover {
+  color: var(--blue);
+}
+
+.description-text {
+  color: var(--dark-gray-blue);
+}
+
+.time-past {
+  color: var(--gray-blue);
+}
+
+.unread-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  border-radius: 50%;
+  margin: 0 0 1px 5px;
+}
+
+.bg-unread {
+  background-color: var(--snow);
+}
+
+.private-message {
+  color: var(--dark-gray-blue);
+  border-radius: 5px;
+  border: 1px solid var(--very-light-gray-blue);
+  padding: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.private-message:hover {
+  background-color: var(--light-gray-blue);
+}
+
+.pic-notification {
+  display: grid;
+  grid-template-columns: 1fr 45px;
+}
+
+.pic-notification img {
+  width: 45px
+}
+
+.post {
+  font: var(--f-body-bold);
+  color: var(--dark-gray-blue);
+  cursor: pointer;
+}
+
+.post:hover {
+  color: var(--blue);
+}
+
+.group {
+  font: var(--f-body-bold);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+@media (max-width:730px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  body, 
+  .user-name, 
+  .post, 
+  .group {
+    font-size: 0.875rem;
+  }
+
+  .notification-panel {
+    padding: 20px 15px 0;
+  }
+
+  #header {
+    margin-bottom: 20px;
+  }
+
+  #header h1 {
+    font-size: 1.25rem;
+  } 
+}

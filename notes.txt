@@ -1,0 +1,15 @@
+types of notification:
+
+- reacted to post
+  - gray out the 'post'
+- following
+- joined a group
+  - blue club name
+- sent private message
+  - the post have hover effect and is a container
+- commented on picture
+  - picture is at the right
+
+states:
+- read
+- not read
