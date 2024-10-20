@@ -71,7 +71,7 @@ function NotificationCard(props) {
       className={`notification-card ${!props.read ? "bg-unread" : ""}`}
       onClick={() => props.updateRead(props.id)}
     >
-      <img className="avatar" src={props.avatar} />
+      <img className="avatar" src="./assets/images/avatar-mark-webber.webp" />
       <div className="notification-content">
         {props.event === "follow" ? (
           <>
