@@ -2,7 +2,7 @@ const mockDb = [
   {
     id: 1,
     user: "Mark Webber",
-    avatar: "/assets/images/avatar-mark-webber.webp",
+    avatar: "assets/images/avatar-mark-webber.webp",
     event: "react_to_post",
     timePast: "1m",
     snippet: "My first tournament today!",
@@ -11,7 +11,7 @@ const mockDb = [
   {
     id: 2,
     user: "Angela Gray",
-    avatar: "/assets/images/avatar-angela-gray.webp",
+    avatar: "assets/images/avatar-angela-gray.webp",
     timePast: "5m",
     event: "follow",
     snippet: "",
